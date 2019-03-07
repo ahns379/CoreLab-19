@@ -1,0 +1,146 @@
+html, body{
+  height: 100%;
+}
+
+h1, h2, h3{
+  text-align: center;
+}
+
+h1{
+  font-size: 4em;
+}
+
+h2{
+  font-size: 2em;
+}
+
+h3{
+  font-size: 3em;
+}
+
+.description{
+  width: 50%;
+  margin-top: 10%;
+  margin-left: 25%;
+}
+
+.af, .al, .an, .sa{
+  position: relative;
+  height: 100%;
+  float: left;
+}
+
+.af, .an{
+  width: 33.333%;
+}
+
+.al{
+  width: 50%;
+}
+
+.sa{
+  width: 100%;
+}
+
+.afgh{
+  left: 35%;
+  top: -75%;
+  width: 30%;
+  height: 50%;
+}
+
+.black{
+  background-color: black;
+}
+
+.red{
+  background-color: #be0000ff;
+}
+
+.green{
+  background-color: #007a36ff;
+}
+
+.alg{
+  left: 8%;
+  top: -100%;
+  width: 85%;
+}
+
+.white{
+  background-color: white;
+}
+
+.al_green{
+  background-color: #006233;
+  }
+
+.and{
+  left: 34%;
+  top: -75%;
+  width: 32%;
+  height: auto;
+}
+
+.blue{
+  background-color: #0018A8;
+}
+
+.yellow{
+  background-color: #FEDF00;
+}
+
+.red1{
+  background-color: #D52B1E;
+}
+
+.sam{
+  left: -38%;
+  top: -100%;
+  width: 25%;
+  height: auto;
+}
+
+.blue_1{
+  background-color:#002B7F;
+  width: 50%;
+  height: 50%;
+  top: -100%;
+}
+
+.red_2{
+  background-color: #CE1126;
+}
+
+.flip {
+  margin: 20%;
+  margin-top: 10%;
+  background-color: transparent;
+  width: 60%;
+  height: 60%;
+  perspective: 1000px;
+}
+
+.inside {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip:hover .inside {
+  transform: rotateY(180deg);
+}
+
+.outside, .original {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.original {
+  background-color: #e5e5e5;
+  transform: rotateY(180deg);
+}
