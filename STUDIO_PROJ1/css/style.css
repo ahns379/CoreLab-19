@@ -1,11 +1,15 @@
+@font-face {
+  font-family: garamond;
+  src: url('garamond.ttf');
+}
+
 *, *:after, *:before{
   margin: 0;
   padding: 0%;
   box-sizing: border-box;
   font-size: 1.6vw;
   color: black;
-  font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
-  font-weight: lighter;
+  font-family: 'EB Garamond', serif;
 }
 
 html{
@@ -53,10 +57,6 @@ h1 {
   left: 6%;
 }
 
-.All_footnotes{
-  width: 15%;
-  margin-left: 11%;
-}
 
 .footnotes{
   font-size: 13px;
@@ -76,20 +76,34 @@ h1 {
   text-decoration: none;
 }
 
-.ft{
-  position: absolute;
+h2{
+  font-family: "Gill Sans", sans-serif;
+  font-weight: lighter;
   font-size: 1vw;
-  width: 15%;
-  height: 15%;
-  overflow: auto;
-  background-color: #ededed;
-  transition: all .2s ease-in-out;
-  font-family: Tahoma, Geneva, sans-serif;
+  position: fixed;
+  margin-top: -1.3%;
+  color: #a3a3a3;
 }
 
-.ft:hover{
-  transform: scale(1.2);
+h3{
+  font-size: 1vw;
+  position: absolute;
+  margin-top: -2%;
 }
+
+.ft{
+  position: fixed;
+  color: #a3a3a3;
+  font-size: .9vw;
+  width: 15%;
+  height: 65%;
+  overflow: scroll;
+  left: 12%;
+  bottom: 1%;
+  font-family: "Gill Sans", sans-serif;
+  cursor: url(http://icons.iconarchive.com/icons/icons8/ios7/24/Arrows-Down-4-icon.png), auto;
+}
+
 
 .library{
   margin-top: 3vh;
@@ -162,14 +176,18 @@ h5{
 
 .text, .text1, .All_endnote {
   width: 100%;
-  padding: 5%;
+  /* padding: 5%; */
   padding-left: 30%;
   padding-top: 2%;
+  padding-right: 2%;
+
 }
 
-.text{
+div.text{
   text-indent: 50px;
+  cursor: url(http://icons.iconarchive.com/icons/icons8/ios7/32/Arrows-Down-4-icon.png), auto;
 }
+
 
 .text1 {
   padding-top: 20%;
@@ -192,10 +210,13 @@ h5{
   text-decoration: none;
 }
 
-
 .about:hover, .back:hover{
   text-decoration: underline;
   cursor: pointer;
+}
+.All_endnote{
+  margin-top: 6%;
+  margin-bottom: 5%;
 }
 
 #endnotes{
@@ -209,6 +230,7 @@ h5{
   height: 1px;
   background-color: black;
   left: 30%;
+  margin-top: 5%;
 }
 
 .arrow{
@@ -241,7 +263,7 @@ h5{
   padding: 4px;
   border-width: 1px 0 0 1px;
   position: absolute;
-  margin-left: 33.5%;
+  margin-left: 35%;
   margin-top: -1%;
   transform: rotate(-135deg);
 }
@@ -385,3 +407,87 @@ h5{
   }
 }
 
+/* @media only screen and (max-width:800px) {
+  *, *:after, *:before{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: black;
+    font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+    font-weight: lighter;
+  }
+
+  .ft{
+    position: absolute;
+    font-size: 12px;
+    width: 15%;
+    height: 15%;
+    overflow: auto;
+    background-color: #ededed;
+    transition: all .2s ease-in-out;
+    font-family: Tahoma, Geneva, sans-serif;
+  }
+
+  .ft:hover{
+    transform: scale(1.2);
+  }
+
+  .library{
+    margin-top: 2em;
+  }
+
+  .mirror{
+    margin-top: 31em;
+  }
+
+  .hex{
+    margin-top: 66em;
+  }
+
+  .librarian{
+    margin-top: 116em;
+  }
+
+  .symbols{
+    margin-top: 138em;
+  }
+
+  .infinte{
+    margin-top: 154em;
+  }
+
+  .narrator{
+    margin-top: 179em;
+  }
+
+  .purifiers{
+    margin-top: 211em;
+  }
+
+  .purifiers:hover{
+    z-index:1;
+  }
+
+  .ManofBook{
+    margin-top: 217em;
+  }
+
+  .AxMl{
+    margin-top: 252em;
+  }
+
+
+}
+
+@media only screen and (max-width:1000px) {
+  *, *:after, *:before{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-size: 25px;
+    color: black;
+    font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+    font-weight: lighter;
+  }
+} */

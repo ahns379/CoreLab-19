@@ -1,0 +1,27 @@
+body{
+}
+
+.git{
+  margin-left: 90%;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.git:hover{
+  background-color: #ccc;
+}
+
+.back{
+  margin-left: 90%;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.studio{
+  margin-left: 45%;
+  margin-top: 25%;
+}
+
+.lab{
+  margin-left: 46%;
+}
