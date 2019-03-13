@@ -54,11 +54,9 @@
   justify-content: center
 }
 
-/* .l_projects:hover,.s_projects:hover{
-  border-style: inset;
-  border-color: #ccc;
-  box-shadow: inset 0 0 10px;
-} */
+.l_projects:hover,.s_projects:hover{
+  cursor: url(http://icons.iconarchive.com/icons/iconsmind/outline/48/Cursor-Click-2-icon.png), auto;
+}
 
 .titles{
   margin-left: 42%;
