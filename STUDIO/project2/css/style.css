@@ -26,7 +26,6 @@ h2 {
     transition: all 2s;
     text-shadow: 1px 1px 50px #FFFF7F;
     height: 150px;
-    /* text-align: center; */
     border-radius: 50%;
     animation: all 1.5s;
 }
