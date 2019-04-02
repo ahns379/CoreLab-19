@@ -1,0 +1,43 @@
+
+html, body {
+  background: linear-gradient(100deg,#000fa3, #0a05b7, #05018e, #17006d,#0c003a, black);
+  background-size: 1000% 1000%;
+  animation: backgroundAnimate 100s ease infinite;
+}
+
+@keyframes backgroundAnimate {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+h1{
+  color: white;
+  font-size: 5em;
+  text-align: center;
+  opacity: .5;
+}
+
+h2 {
+    font-family: 'Baloo Bhaina', cursive;
+    transform: scale(15);
+    position: absolute;
+    color: white;
+    transition: all 2s;
+    text-shadow: 1px 1px 50px #FFFF7F;
+    height: 150px;
+    /* text-align: center; */
+    border-radius: 50%;
+    animation: all 1.5s;
+}
+
+h2.animate {
+    transform: scale(.3);
+    text-shadow: 1px 1px 100px #FFFF7F;
+}
+
+h1.fade{
+  opacity: 0%;
+  visibility: hidden;
+  }
+}
