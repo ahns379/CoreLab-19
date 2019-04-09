@@ -22,12 +22,9 @@ function type(event){
 	letters.innerHTML = event.key;
 	letters.style.top = randomInt(h) + "px";
 	letters.style.left = randomInt(w) + "px";
-<<<<<<< HEAD
+
   $("h2").addClass("animate");
   document.body.append(letters);
-=======
-	$("h2").addClass("animate");
-	document.body.appendChild(letters);
->>>>>>> 1ce10e8e6c08bc0208e429177e7511903fc227be
+
 }
 document.onkeypress = type;
