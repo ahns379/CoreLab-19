@@ -1,26 +1,59 @@
 *{
   font-family: Menlo, Monaco, "Droid Sans Mono", Consolas, "Lucida Console", "Courier New", monospace;
   color:white;
+  font-size: 1em;
 }
 
-html{
+ol
+{
+    /* list-style: decimal ; */
+
+    list-style: none;
+    float:left;
+
+}
+
+li
+{
+    counter-increment: custom;
+
+}
+
+ol li:before
+{
+    content: counter(custom) " ";
+    width: 3em;
+    text-align: right;
+    display: inline-block;
+    color: gray;
+}
+
+ol li:first-child {
+  counter-reset: custom;
+}
+
+body{
+    margin-top: 5%;
     background-color: rgb(41,44,52);
+    margin-left: 5%;
 }
 
 
 .mybookmarklet{
-  font-size: 8em;
   text-decoration: none;
   list-style: none;
-}
-
-.click{
-  font-size: 1em;
 
 }
 
-body{
-  margin-top: 6%;
+button{
+  background-color: rgba(41,44,52);
+  border: 2px solid green;
+
+}
+
+button:hover{
+  background-color: rgb(40,40,50);
+
 }
 
 .letter{
@@ -29,4 +62,24 @@ body{
 
 span{
   color: rgb(210,115,119);
+}
+
+h1{
+  margin: 0;
+  display: inline-block;
+}
+
+h2{
+  margin: 0;
+  display: inline-block;
+}
+
+h3{
+  margin: 0;
+  display: inline-block;
+}
+
+div{
+  margin: 0;
+  display: inline-block;
 }
