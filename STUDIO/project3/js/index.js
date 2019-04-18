@@ -38,6 +38,4 @@ $("*").mouseover(function(event) {
   });
   $(".tag-name").css("position","absolute");
   $(".tag-name").css("top",$(document).scrollTop() + "px");
-
-
 });
