@@ -6,9 +6,7 @@
 
 ol
 {
-    /* list-style: decimal ; */
-
-    list-style: none;
+  list-style: none;
     float:left;
 
 }
