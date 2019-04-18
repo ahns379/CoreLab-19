@@ -1,0 +1,32 @@
+*{
+  font-family: Menlo, Monaco, "Droid Sans Mono", Consolas, "Lucida Console", "Courier New", monospace;
+  color:white;
+}
+
+html{
+    background-color: rgb(41,44,52);
+}
+
+
+.mybookmarklet{
+  font-size: 8em;
+  text-decoration: none;
+  list-style: none;
+}
+
+.click{
+  font-size: 1em;
+
+}
+
+body{
+  margin-top: 6%;
+}
+
+.letter{
+  display: inline-block;
+}
+
+span{
+  color: rgb(210,115,119);
+}
