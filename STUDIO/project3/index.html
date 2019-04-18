@@ -25,13 +25,14 @@
     <br>
 
     <h3>
-      &lt;<span>h3</span>&gt;Lists all the element tags from top layer to bottom layer&lt;/<span>h3</span>&gt;
+      &lt;<span>h3</span>&gt;On hover it lists all the element tags from the most inner layer to the most outer layer&lt;/<span>h3</span>&gt;
     </h3>
     <br>
 
     <div>
       &lt;<span>div</span>&gt;
       <br>
+
       <a class = "mybookmarklet" id = "copy" href="javascript:(function()%7Bfunction%20callback()%7B%24(%22body%22).css(%22transform%22%2C%20%22perspective(10000px)%20rotateY(50deg)%22)%3B%24(%22html%22).css(%22cssText%22%2C%20%22margin-top%3A%205%25%3B%20margin-left%3A%20-8%25%3B%20width%3A%2060%25%3B%22)%3Bvar%20style%20%3D%20document.createElement(%22style%22)%3Bdocument.body.appendChild(style).innerHTML%20%3D%20%22*%20%7Btransform-style%3A%20preserve-3d%3Btransition%3A%20transform%201s%3Bbackground-color%3A%20rgba(0%2C%200%2C%200%2C%200.03)%3B%7D*%3Ahover%20%7Btransform%3A%20translateZ(100px)%3B%7D%22%3B%24(%22html%22).append(%22%3Cdiv%20class%3D'tag-name'%3E%3C%2Fdiv%3E%22)%3B%24(%22*%22).mouseover(function(event)%20%7Bevent.stopPropagation()%3Bvar%20elementType%20%3D%20this.tagName%3Bvar%20ALL%20%3D%20%24(this).parents().map(function%20()%20%7Breturn%20this.tagName%3B%7D).get().join(%22%20%22)%3B%24(%22.tag-name%22).text(%22%3C%22%20%2B%20elementType%20%2B%20%22%3E%20%5Cn%22%20)%3B%24(%22.tag-name%22).append(ALL)%3B%24(%22.tag-name%22).css(%7B%22font-family%22%3A%20%22monospace%22%2C%22left%22%3A%20%22160%25%22%20%2C%22font-size%22%3A%20%221.5em%22%2C%22word-spacing%22%3A%20%22100vw%22%2C%22background-color%22%3A%20%22rgb(41%2C44%2C52)%22%2C%22color%22%3A%20%22rgb(210%2C115%2C119)%22%7D)%3B%24(%22.tag-name%22).css(%22position%22%2C%22absolute%22)%3B%24(%22.tag-name%22).css(%22top%22%2C%24(document).scrollTop()%20%2B%20%22px%22)%3B%7D)%7Dvar%20s%3Ddocument.createElement(%22script%22)%3Bs.src%3D%22https%3A%2F%2Fcode.jquery.com%2Fjquery-3.3.1.min.js%22%3Bif(s.addEventListener)%7Bs.addEventListener(%22load%22%2Ccallback%2Cfalse)%7Delse%20if(s.readyState)%7Bs.onreadystatechange%3Dcallback%7Ddocument.body.appendChild(s)%3B%7D)()">
 
         &nbsp;&lt;<span>a</span>&gt;

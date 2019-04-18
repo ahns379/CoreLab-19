@@ -26,7 +26,8 @@
 
 .studio, .lab{
   margin-left: 45%;
-  margin-bottom: 18%;
+  margin-top: -5%;
+  margin-bottom: 10%;
   font-size: 4.5em;
 }
 
@@ -47,7 +48,7 @@
 }
 
 .s_projects{
-  /* margin-left: 44%; */
+  /* margin-top: 44%; */
   /* text-align: center; */
   display: flex;
   align-items: center;
