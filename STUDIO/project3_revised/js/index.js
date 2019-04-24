@@ -1,5 +1,5 @@
-$("body").css("transform", "perspective(10000px) rotateY(50deg)");
-$("html").css("cssText", "margin-top: 5%; margin-left: 0; width: 60%;");
+$("body").css("transform", "rotateY(50deg)");
+$("html").css("cssText", "margin-top: 5%; margin-left: 0; width: 60%; ");
 
 var style = document.createElement("style");
 document.body.appendChild(style).innerHTML = "
@@ -8,6 +8,7 @@ document.body.appendChild(style).innerHTML = "
     transition: transform 1s;
     background-color: rgba(0, 0, 0, 0.03);
   }
+
   *:hover {
     transform: translateZ(100px);
   }
@@ -39,9 +40,12 @@ $("*").mouseover(function(event) {
     "margin-top": "-9%",
     "padding": "20px",
     "background-color": "rgb(41,44,52)",
+    "transform-style": "preserve-3d",
+    "transform": "translateZ(50000px)",
     "color": "rgb(210,115,119)"
   });
-  $(".tag-name").css("position","absolute");
+
+  $(".tag-name").css("position","fixed");
   $(".tag-name").css("top",$(document).scrollTop() + "px");
 
 
