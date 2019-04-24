@@ -20,24 +20,24 @@ $("*").mouseover(function(event) {
   var elementType = this.tagName;
   var ALL = $(this).parents()
     .map(function () {
-      return  this.tagName;
+      return "<" + this.tagName + ">";
     })
     .get()
+    .reverse()
     .join("  ");
 
+  var text = ALL + " <" + elementType + ">";
 
-  $(".tag-name").text(" <" + elementType + ">   ");
-  $(".tag-name").append(ALL);
+  $(".tag-name").text(text);
 
   $(".tag-name").css({
     "font-family": "monospace",
-    "left": "150%",
+    "left": "0",
     "top": "0",
     "width": "100vw",
     "font-size": "1.5em",
     "margin-top": "-9%",
     "padding": "20px",
-    "word-spacing": "10000px",
     "background-color": "rgb(41,44,52)",
     "color": "rgb(210,115,119)"
   });

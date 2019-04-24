@@ -25,16 +25,18 @@
 }
 
 .studio, .lab{
-  margin-left: 45%;
-  margin-top: -5%;
-  margin-bottom: 10%;
-  font-size: 4.5em;
+  font-size: 2em;
+  position: absolute;
+  margin-top: 20%;
+  text-decoration: none;
+  transform: rotate(-90deg);
 }
 
 .studio{
-  margin-left: 46%;
-  text-decoration: none;
+  margin-left: -1%;
 }
+
+
 
 .l_projects, .s_projects{
   /* margin-left: 45%; */
