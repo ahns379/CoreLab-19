@@ -1,0 +1,3 @@
+A Pen created at CodePen.io. You can find this one at https://codepen.io/commander-clifford/pen/nFdED.
+
+ A gallery of images that, when hovered, blackout all other images adjacent to the actual hovered image.  Leaving the hovered image intact and only the others affected.  The text inside of the caption bubble is semi-fluid in the idea that is size is dynamically set in a FitUI function that sets the font-size at an integer that is ~7% of the images current height.
