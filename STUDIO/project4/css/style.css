@@ -19,7 +19,7 @@ h2{
   width: 80%;
   height: 100%;
   margin-left: 1%;
-  opacity: 0.4;
+  opacity: 0;
 }
 
 
@@ -46,7 +46,7 @@ div.add2:hover{
 }
 
 .btn-group{
-  font-size: 5em;
+  font-size: 2em;
   position: absolute;
   z-index: 99999;
   margin-top: 10%;
@@ -55,8 +55,26 @@ div.add2:hover{
   text-align: center;
 }
 
-.box_me_tag, .box_we_tag{
+.box_me_tag{
   cursor: pointer;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 0;
+  z-index: 99999;
+  background-color: white;
+  width: 15%;
+}
+
+.box_we_tag{
+  cursor: pointer;
+  position: fixed;
+  top: 46px;
+  right: 0;
+  padding: 0;
+  z-index: 99999;
+  background-color: white;
+  width: 15%;
 }
 
 .box_me_tag:hover{
@@ -74,19 +92,27 @@ div.add2:hover{
   display: none;
 }
 
+
 .group{
   font-size: 2em;
-  margin-left: 75%;
+  margin-left: 70%;
   margin-top: 1%;
+  top: 0;
   position: fixed;
   z-index: 99999;
+  width: 40%;
 }
 
-.year, .me, .we{
+.year, .me, .we, .day{
   text-decoration: none;
   color: black;
   padding: 10px;
   background-color: white;
+}
+
+.year{
+  color: gray;
+  background-color: lightgray;
 }
 
 .friends{
@@ -94,11 +120,20 @@ div.add2:hover{
   color: black;
 }
 
-.me1, .we1{
+.me1, .we1, .year1{
   text-decoration: none;
   color: gray;
   padding: 10px;
-  background-color: white;
+  background-color: lightgray;
+}
+
+.we, .me, .day{
+  opacity: 0.1;
+}
+
+
+.year1{
+  font-size: 3em;
 }
 
 .year:hover, .me:hover, .we:hover{
@@ -114,7 +149,6 @@ div.add2:hover{
   padding: 20px;
   width: 3%;
   font-size: 20px;
-  /* overflow: visible; */
 }
 
 img {
@@ -126,10 +160,8 @@ img {
 img.images2 {
   max-width: 65%;
   margin-left: 10%;
-  /* margin-top: 3%; */
-  height: 55vh;
+  height: 60vh;
   cursor: url('../back.png'), auto;
-  /* height: 20%; */
 }
 
 body{
@@ -217,8 +249,7 @@ div.cf.dates{
 
 
 .box_me, .box_friend {
-  display: none;
-  margin-top: 10%;
+  margin-top: 5%;
   position: absolute;
   margin-left: 1%;
 }
