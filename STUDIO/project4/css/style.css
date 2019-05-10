@@ -1,13 +1,8 @@
 *,*:after,*:before{
-
   font-family: brother-1816, sans-serif;
-
   font-weight: 400;
-
   font-style: normal;
 }
-
-
 
 h2{
   font-size: 1em;
@@ -87,11 +82,9 @@ div.add2:hover{
   background-color: black;
 }
 
-
 .all_months, .buttons{
   display: none;
 }
-
 
 .group{
   font-size: 2em;
@@ -130,7 +123,6 @@ div.add2:hover{
 .we, .me, .day{
   opacity: 0.1;
 }
-
 
 .year1{
   font-size: 3em;
@@ -333,45 +325,6 @@ body {
   padding: 0;
   border: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* media query */
 @media screen and (max-width: 600px){
